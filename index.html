@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <title>Projeto</title>
+ <style>
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("/casar.jpg")}
+.bgimg2 {background-image: url("/blossoms-g8105dc1dd_1920.jpg")}.
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+
+</head>
+<body>
+
+  <!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Anderson & Karine</h1>
+    <h2>Estão se casando</h2>
+    <h2><b>20.06.2020</b></h2>
+  </div>
+</header>
+
+  <!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Anderson & Karine</a>
+    <a href="#o casamento" style="width:25%" class="w3-bar-item w3-button">O casamento</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Anderson & Karine</b></h1>
+    <img class="w3-round w3-grayscale-min" src="/noivo.jpg" style="width:100%;margin:32px 0">
+    <p><i>Todos vocês nos conhecem. E todos nós conhecemos você. Vamos nos casar lorem ipsum dolor sit amet, consectetur adipiscing elit. Com o propósito de reduzir o mínimo possível, quem de nós deve exercer qualquer emprego, exceto para tirar proveito das consequências dele. Excepteur sint
+      cega saudade, eles não veem, eles são os culpados por aqueles que abandonam seus escritórios, acalma a alma, isto é, os labores dos principais alunos de graduação, mas eu dou esse tempo para cair em alguma grande dor. Para que mais informações venham, qual é a nossa prática escolar
+      o trabalho é apenas para atingir os objetivos a partir dele.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Detalhes do casamento</a></p>
+  </div>
+
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Você está convidado</h1><br>
+    <h2>Claro..</h2>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>O CASAMENTO</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="/casamento.jpg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>Quando</h2>
+        <p>Cerimônia de casamento - 14h00</p>
+        <p>Recepção e Jantar - 17h00</p>
+      </div>
+      <div class="w3-half">
+        <h2>Onde</h2>
+        <p>Algum lugar, um endereço</p>
+        <p>Alguns onde, algum endereço</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1>ESPERO QUE VOCÊ POSSA FAZÊ-LO!</h1>
+  <p class="w3-large">Gentilmente responda até fevereiro de 2020</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">VOCÊ PODE VIR?</h1>
+      <p>Nós realmente esperamos que você possa fazer isso.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Nome" name="nome">
+      </form>
+      <p><i>Sinceramente, Anderson &amp; Karine</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Indo</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Não pode vir</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Desenvolvimento por <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <h3 id="contato" class="sombratexto">Contato</h3>
+  <p id="telefone" class="sombratexto">Telefone: (11) 99988-2000</p>
+
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px">&nbsp;</div>
+      
+  
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
